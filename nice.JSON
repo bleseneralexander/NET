@@ -1,6 +1,19 @@
-name: container
-"protocol":html {
-"features":{
 
-}
+name: "container"
+  "html" {
+      "features"{"protocol":"POST"}
+  }
+  "features" {
+  "getPost"{"protocol":"html"}
+    "forwardAttributes"{
+      "protocol":"html5"
+    }
+  }
+"forwardPorts": [5000, 5001],
+   "portsAttributes": {
+     "5000": {
+       "protocol": "html"
+     }
+   }
+
 }
