@@ -34,8 +34,11 @@ name: "container"
 "PortsAt": [5000, 5005], "features"
 {
 "port5000": [5000]
-      "unusedPorts" {  "rtf": 0  }
-      "usedPorts" {()}
+      "unusedPorts" {()}
+      "usedPorts" {
+                  "html":1,
+                  "html5lib":1
+                  }
 "port5001": [5001]
       "unusedPorts" {()}
       "usedPorts" {()}
@@ -47,8 +50,8 @@ name: "container"
       "usedPorts" {()}
 "port5004": [5004]
       "unusedPorts" {()}
-      "usedPorts" { ".png": 1
-                    ".jpeg": 1
+      "usedPorts" { ".png": 1,
+                    ".jpeg": 1,
                     ".mov": 1          
                   }
 "port5005": [5005]
