@@ -9,11 +9,52 @@ name: "container"
       "protocol":"html5"
     }
   }
-"forwardPorts": [5000, 5001],
+"forwardPorts": [5000, 5005],
    "portsAttributes": {
      "5000": {
-       "protocol": "html"
+       "protocol": "HTML"
      }
+    "5001": {
+      "protocol":"RSS"
+    }
+    "5002": {
+      "protocol": "GML"
    }
+    "5003": {
+      "protocol": "XSLT"
+    }
+    "5004": {
+      "protocol": "SVG"
+    }
+    "5005": {
+      "protocol": "XML"
+    }
 
+}
+"PortsAt": [5000, 5005], "features"
+{
+"port5000": [5000]
+      "unusedPorts" {()}
+      "usedPorts" {()}
+"port5001": [5001]
+      "unusedPorts" {()}
+      "usedPorts" {()}
+"port5002": [5002]
+      "unusedPorts" {()}
+      "usedPorts" {()}
+"port5003": [5003]
+      "unusedPorts" {()}
+      "usedPorts" {()}
+"port5004": [5004]
+      "unusedPorts" {()}
+      "usedPorts" {()}
+"port5005": [5005]
+      "unusedPorts" {()}
+      "usedPorts" {()}
+}
+
+"forwardPorts", [5000,5005],
+"portsAttributes":
+{
+usedPorts: ACTIVE()
 }
